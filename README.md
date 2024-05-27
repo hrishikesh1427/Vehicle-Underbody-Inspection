@@ -1,3 +1,14 @@
+![login_page](https://github.com/hrishikesh1427/Vehicle-Underbody-Inspection/assets/84369074/c4d18692-d108-4116-8af1-d12ab2fde952)
+![failed_items_display](https://github.com/hrishikesh1427/Vehicle-Underbody-Inspection/assets/84369074/ca8761b0-b752-447c-92c4-f5bd2712433f)
+![edit_camera_page](https://github.com/hrishikesh1427/Vehicle-Underbody-Inspection/assets/84369074/6f4e61c4-e15b-4772-8cdb-43135da89be7)
+![checklist_display_page](https://github.com/hrishikesh1427/Vehicle-Underbody-Inspection/assets/84369074/ac87b320-83a6-4d5f-9539-e3e4fc5fc15c)
+![camera_settings_page](https://github.com/hrishikesh1427/Vehicle-Underbody-Inspection/assets/84369074/a1db0fb4-ac2d-4880-8d72-db66ce6ef886)
+![add_camera_page](https://github.com/hrishikesh1427/Vehicle-Underbody-Inspection/assets/84369074/74ff0c65-ca57-41a7-b611-1d70d4a3db6a)
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
