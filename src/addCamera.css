@@ -1,0 +1,103 @@
+/* addCamera.css */
+
+/* Container for the entire page */
+.add-camera-container {
+  max-width: 500px;
+  margin-top: 20px;
+  margin-left: auto; /* Move container to the right */
+  margin-right: auto; /* Move container to the left */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #e3dddd;
+}
+
+
+/* Title styling */
+.add-camera-container h2 {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Form styling */
+.add-camera-form {
+  display: grid;
+  grid-gap: 10px;
+}
+
+/* Label styling */
+.add-camera-form label {
+  font-weight: bold;
+}
+
+/* Input field styling */
+.add-camera-form input[type='text'],
+.add-camera-form input[type='password'] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.add-camera-form input[type='text']:focus,
+.add-camera-form input[type='password']:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Button styling */
+.add-camera-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-camera-form button:hover {
+  background-color: #0056b3;
+}
+
+.add-camera-form button + button {
+  margin-left: 10px;
+}
+/* addCamera.css */
+
+/* Button container styling */
+.button-container {
+  display: flex;
+  justify-content: space-between; /* Align buttons with space between */
+}
+
+/* Save button styling */
+.save-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.save-button:hover {
+  background-color: #0056b3;
+}
+
+/* Cancel button styling */
+.cancel-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cancel-button:hover {
+  background-color: #bd2130;
+}

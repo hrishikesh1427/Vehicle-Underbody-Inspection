@@ -1,0 +1,265 @@
+/* FinalPage.css */
+
+/* Container for buttons */
+.button-container {
+  display: flex;
+  gap: 10px; /* Adjust the gap between buttons */
+  margin-top: 10px; /* Add margin space between buttons and checklist display */
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Style for the New Inspection button */
+.new-inspection-button {
+  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: #397ed3; /* Change button background color */
+  color: #fff; /* Change button text color */
+  border: none;
+  border-radius: 5px; /* Adjust border radius for rounded corners */
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  flex: 1; 
+}
+
+/* Style for the Variant buttons */
+.variant-button {
+  padding: 1px 10px; /* Adjust padding as needed */
+  background-color: #70757b; /* Change button background color */
+  color: #fff; /* Change button text color */
+  border: none;
+  border-radius: 10px; /* Adjust border radius for rounded corners */
+  cursor: pointer;
+  font-size: 16px;
+  white-space: nowrap; 
+  transition: background-color 0.3s;
+}
+
+/* Prevent Variant buttons from expanding */
+.variant-button {
+  flex: 0;
+}
+
+/* Hover effect for buttons */
+.new-inspection-button:hover {
+  background-color: #26922d; /* Change button background color on hover */
+}
+
+.variant-button:hover{
+  background-color: #312692;
+}
+.checklist-display {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  background-image: url('E:\ReactFlaskClone\ReactFlask\Frontend\my-react-app\src\images\lenny-kuhne-jHZ70nRk7Ns-unsplash.jpg ');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.cam-column {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 400px;
+  margin: 10px;
+  position: relative; /* Ensure relative positioning for absolute positioning of cam-image */
+}
+
+.cam-column h2 {
+  background-color: #3f3636;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px;
+  margin: 0;
+  border-bottom: 2px solid #0056b3;
+  
+}
+
+/* .scrollable-checklist {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #0056b3 #f0f0f0;
+} */
+
+
+
+
+
+.scrollable-checklist::-webkit-scrollbar {
+  width: 5px;
+}
+
+.scrollable-checklist::-webkit-scrollbar-thumb {
+  background-color: #0056b3;
+  border-radius: 4px;
+}
+
+.scrollable-checklist::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}
+.scrollable-checklist ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+/* Center the list items vertically */
+li {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li.checked {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+li.wrong {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+li:hover {
+  background-color: #e2e2e2;
+}
+
+.cam-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.cam-image img {
+  width: 100%;
+  height: 100%; /* Adjust height to ensure image fits within the container */
+  object-fit: contain; /* Ensure entire image is visible within the container */
+  border-radius: 8px;
+  padding-top: 20px;
+  margin-top: auto; 
+}
+
+
+
+.checklist {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.inspection-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.inspection-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.inspection-button:hover {
+  background-color: #0056b3;
+}
+
+.loading {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid transparent; /* Ensure equal border width for perfect circle */
+  border-top-color: #0056b3; /* Use your desired color */
+  border-radius: 50%;
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.cam-column {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  /* overflow: hidden; */
+  width: 400px;
+  margin: 10px;
+  position: relative; /* Ensure relative positioning for absolute positioning of cam-image */
+}
+
+.cam-image {
+  position: absolute; /* Position the cam-image absolutely within the cam-column */
+  bottom: 0; /* Align cam-image to the bottom */
+  left: 0; /* Align cam-image to the left */
+  width: 100%; /* Ensure cam-image spans the entire width of the cam-column */
+  padding: 20px;
+}
+
+.cam-image img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.failed-items-list h3 {
+  color: #faf6f6; /* Red text color */
+  font-size: 18px; /* Font size */
+  margin: 0; /* Remove margin */
+  padding: 10px; /* Padding */
+  border-bottom: 2px solid #0056b3; /* Bottom border */
+  /* Full width with padding */
+   /* Include padding in width calculation */
+  position: sticky; /* Make the element sticky */
+  top: 0; /* Align to the top of the failed items list */
+  z-index: 1; /* Ensure the h3 appears above other content */
+  background-color: #721c24;
+  text-align: center;
+}
+
+
+.scrollable-checklist {
+  width: 100%;
+  max-height: 400px;
+  overflow-y: auto;
+  box-sizing: border-box; /* Add this line */
+}
+
+.scrollable-failed-items {
+  width: 100%;
+  max-height: 400px;
+  overflow-y: auto;
+  box-sizing: border-box; /* Add this line */
+}
